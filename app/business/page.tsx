@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { DiamondPattern, StripePattern } from '../components/EthiopianPatterns';
-import ParallaxSection from '../components/ParallaxSection';
-import Link from 'next/link';
+import { DiamondPattern, StripePattern } from "../components/EthiopianPatterns";
+import ParallaxSection from "../components/ParallaxSection";
+import Link from "next/link";
 
 export default function BusinessPage() {
   return (
@@ -24,9 +24,9 @@ export default function BusinessPage() {
               Business & Innovation
             </h1>
             <p className="text-white/80 text-xl max-w-3xl mx-auto leading-relaxed">
-              Grand Mesob Tower represents a landmark investment opportunity—
-              a premier business destination at the heart of Africa's fastest-growing 
-              economies.
+              Grand Mesob Tower represents a landmark investment opportunity— a
+              premier business destination at the heart of Africa's
+              fastest-growing economies.
             </p>
           </ParallaxSection>
         </div>
@@ -43,37 +43,43 @@ export default function BusinessPage() {
               Investment Overview
             </h2>
             <p className="text-black/70 text-lg max-w-3xl mx-auto">
-              A once-in-a-generation opportunity to invest in Ethiopia's defining 
-              landmark and a cornerstone of Addis Ababa's economic future.
+              A once-in-a-generation opportunity to invest in Ethiopia's
+              defining landmark and a cornerstone of Addis Ababa's economic
+              future.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-8 bg-gradient-to-br from-[#c8a882]/10 to-transparent border border-black/10">
-              <div className="text-4xl mb-4">📈</div>
-              <h3 className="font-playfair text-2xl mb-4">Strategic Position</h3>
+              {/* <div className="text-4xl mb-4">📈</div> */}
+              <h3 className="font-playfair text-2xl mb-4">
+                Strategic Position
+              </h3>
               <p className="text-black/70 leading-relaxed">
-                Located in Addis Ababa, the diplomatic capital of Africa and 
-                headquarters of the African Union, at the center of one of the 
+                Located in Addis Ababa, the diplomatic capital of Africa and
+                headquarters of the African Union, at the center of one of the
                 world's fastest-growing regions.
               </p>
             </div>
 
             <div className="p-8 bg-gradient-to-br from-[#c8a882]/10 to-transparent border border-black/10">
-              <div className="text-4xl mb-4">🏛️</div>
+              {/* <div className="text-4xl mb-4">🏛️</div> */}
               <h3 className="font-playfair text-2xl mb-4">Mixed-Use Value</h3>
               <p className="text-black/70 leading-relaxed">
-                Diversified revenue streams from office spaces, hospitality, 
+                Diversified revenue streams from office spaces, hospitality,
                 retail, cultural venues, and premium observation experiences.
               </p>
             </div>
 
             <div className="p-8 bg-gradient-to-br from-[#c8a882]/10 to-transparent border border-black/10">
-              <div className="text-4xl mb-4">🌍</div>
-              <h3 className="font-playfair text-2xl mb-4">National Significance</h3>
+              {/* <div className="text-4xl mb-4">🌍</div> */}
+              <h3 className="font-playfair text-2xl mb-4">
+                National Significance
+              </h3>
               <p className="text-black/70 leading-relaxed">
-                A project of national importance with government support, 
-                international interest, and symbolic value for Ethiopia's development.
+                A project of national importance with government support,
+                international interest, and symbolic value for Ethiopia's
+                development.
               </p>
             </div>
           </div>
@@ -96,12 +102,12 @@ export default function BusinessPage() {
                 Premium Office Spaces
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-6">
-                Over 30 floors of Grade-A office space designed for international 
-                corporations, regional headquarters, financial institutions, and 
-                innovative startups.
+                Over 30 floors of Grade-A office space designed for
+                international corporations, regional headquarters, financial
+                institutions, and innovative startups.
               </p>
               <p className="text-white/70 text-lg leading-relaxed mb-8">
-                Each floor offers flexible layouts, state-of-the-art technology 
+                Each floor offers flexible layouts, state-of-the-art technology
                 infrastructure, and stunning views of Addis Ababa.
               </p>
 
@@ -119,7 +125,9 @@ export default function BusinessPage() {
                 <div className="flex items-start gap-4">
                   <div className="text-[#c8a882] text-2xl">✓</div>
                   <div>
-                    <h4 className="font-medium mb-1">Smart Building Technology</h4>
+                    <h4 className="font-medium mb-1">
+                      Smart Building Technology
+                    </h4>
                     <p className="text-white/60 text-sm">
                       Advanced HVAC, security, and connectivity systems
                     </p>
@@ -131,7 +139,8 @@ export default function BusinessPage() {
                   <div>
                     <h4 className="font-medium mb-1">Premium Amenities</h4>
                     <p className="text-white/60 text-sm">
-                      Conference facilities, dining, fitness, and concierge services
+                      Conference facilities, dining, fitness, and concierge
+                      services
                     </p>
                   </div>
                 </div>
@@ -150,7 +159,8 @@ export default function BusinessPage() {
 
             <div className="bg-gradient-to-br from-white/5 to-white/0 h-[600px] flex items-center justify-center border border-white/10">
               <div className="text-center text-white/40 text-sm uppercase tracking-wider">
-                Office Floor Visualization<br />
+                Office Floor Visualization
+                <br />
                 <span className="text-xs">(Render Placeholder)</span>
               </div>
             </div>
@@ -174,7 +184,7 @@ export default function BusinessPage() {
             <div className="p-10 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
               <h3 className="font-playfair text-2xl mb-4">Equity Investment</h3>
               <p className="text-black/70 leading-relaxed mb-6">
-                Direct equity participation in the development and operation of 
+                Direct equity participation in the development and operation of
                 Grand Mesob Tower, with returns from all revenue streams.
               </p>
               <ul className="space-y-2 text-black/70 text-sm">
@@ -188,7 +198,7 @@ export default function BusinessPage() {
             <div className="p-10 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
               <h3 className="font-playfair text-2xl mb-4">Office Leasing</h3>
               <p className="text-black/70 leading-relaxed mb-6">
-                Secure premium office space for your organization with flexible 
+                Secure premium office space for your organization with flexible
                 lease terms and customization options.
               </p>
               <ul className="space-y-2 text-black/70 text-sm">
@@ -200,9 +210,11 @@ export default function BusinessPage() {
             </div>
 
             <div className="p-10 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
-              <h3 className="font-playfair text-2xl mb-4">Hospitality Partnership</h3>
+              <h3 className="font-playfair text-2xl mb-4">
+                Hospitality Partnership
+              </h3>
               <p className="text-black/70 leading-relaxed mb-6">
-                Partner with us to operate hotels, restaurants, or entertainment 
+                Partner with us to operate hotels, restaurants, or entertainment
                 venues within the tower's hospitality zones.
               </p>
               <ul className="space-y-2 text-black/70 text-sm">
@@ -216,7 +228,7 @@ export default function BusinessPage() {
             <div className="p-10 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
               <h3 className="font-playfair text-2xl mb-4">Retail & Services</h3>
               <p className="text-black/70 leading-relaxed mb-6">
-                Premium retail and service spaces in high-traffic zones serving 
+                Premium retail and service spaces in high-traffic zones serving
                 thousands of daily visitors, workers, and residents.
               </p>
               <ul className="space-y-2 text-black/70 text-sm">
@@ -246,15 +258,17 @@ export default function BusinessPage() {
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Growing Economy</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Ethiopia's rapidly expanding economy and increasing foreign 
+                Ethiopia's rapidly expanding economy and increasing foreign
                 direct investment create strong demand.
               </p>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10">
-              <h4 className="font-playfair text-lg mb-3">Limited Competition</h4>
+              <h4 className="font-playfair text-lg mb-3">
+                Limited Competition
+              </h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                First-mover advantage in ultra-premium real estate and 
+                First-mover advantage in ultra-premium real estate and
                 hospitality in Addis Ababa.
               </p>
             </div>
@@ -262,48 +276,48 @@ export default function BusinessPage() {
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Iconic Status</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                A landmark building creates intrinsic value beyond 
-                standard real estate metrics.
+                A landmark building creates intrinsic value beyond standard real
+                estate metrics.
               </p>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Diverse Revenue</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Multiple income streams reduce risk and maximize 
-                long-term returns.
+                Multiple income streams reduce risk and maximize long-term
+                returns.
               </p>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Tourism Growth</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Rising tourism creates demand for observation decks, 
-                hotels, and cultural experiences.
+                Rising tourism creates demand for observation decks, hotels, and
+                cultural experiences.
               </p>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Regional Hub</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Addis Ababa's role as Africa's diplomatic capital 
-                ensures sustained business activity.
+                Addis Ababa's role as Africa's diplomatic capital ensures
+                sustained business activity.
               </p>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Cultural Value</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Museum and cultural floors create unique positioning 
-                and public goodwill.
+                Museum and cultural floors create unique positioning and public
+                goodwill.
               </p>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10">
               <h4 className="font-playfair text-lg mb-3">Sustainable Design</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Green building features reduce operating costs and 
-                attract ESG-focused tenants.
+                Green building features reduce operating costs and attract
+                ESG-focused tenants.
               </p>
             </div>
           </div>
@@ -313,13 +327,12 @@ export default function BusinessPage() {
       {/* Contact CTA Section */}
       <section className="relative py-32 px-6 bg-gradient-to-br from-[#c8a882] to-[#d4a574] text-black">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="font-playfair text-5xl mb-6">
-            Let's Build Together
-          </h2>
+          <h2 className="font-playfair text-5xl mb-6">Let's Build Together</h2>
           <p className="text-black/80 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
-            We're seeking visionary investors, partners, and tenants who share 
-            our commitment to excellence and Ethiopia's future. Contact us to 
-            discuss investment opportunities, leasing options, or partnership models.
+            We're seeking visionary investors, partners, and tenants who share
+            our commitment to excellence and Ethiopia's future. Contact us to
+            discuss investment opportunities, leasing options, or partnership
+            models.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -338,11 +351,13 @@ export default function BusinessPage() {
           </div>
 
           <p className="text-black/60 text-sm mt-8">
-            For investment inquiries: <a href="mailto:invest@grandmesobtower.com" className="underline">invest@grandmesobtower.com</a>
+            For investment inquiries:{" "}
+            <a href="mailto:invest@grandmesobtower.com" className="underline">
+              invest@grandmesobtower.com
+            </a>
           </p>
         </div>
       </section>
     </div>
   );
 }
-
