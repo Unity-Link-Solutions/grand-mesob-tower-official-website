@@ -36,7 +36,7 @@ export default function PatternDivider({ variant }: PatternDividerProps) {
               className="text-oxidized-brass"
             />
           </pattern>
-          {/* <rect width="1200" height="100" fill="url(#mesob-pattern)" /> */}
+          <rect width="1200" height="100" fill="url(#mesob-pattern)" />
         </svg>
       </div>
     );
@@ -64,7 +64,7 @@ export default function PatternDivider({ variant }: PatternDividerProps) {
             y="10"
             width="10"
             height="10"
-            fill="#1C6E3E"
+            fill="#C8A882"
             transform="rotate(45 15 15)"
           />
           <rect
@@ -72,7 +72,7 @@ export default function PatternDivider({ variant }: PatternDividerProps) {
             y="20"
             width="10"
             height="10"
-            fill="#F2BE22"
+            fill="#C8A882"
             transform="rotate(45 25 25)"
           />
           <rect
@@ -80,7 +80,7 @@ export default function PatternDivider({ variant }: PatternDividerProps) {
             y="10"
             width="10"
             height="10"
-            fill="#BF2A2A"
+            fill="#C8A882"
             transform="rotate(45 35 15)"
           />
         </pattern>
