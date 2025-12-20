@@ -2,6 +2,7 @@
 
 import { DiamondPattern, StripePattern } from "../components/EthiopianPatterns";
 import ParallaxSection from "../components/ParallaxSection";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function BusinessPage() {
@@ -9,6 +10,18 @@ export default function BusinessPage() {
     <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+        <div className="absolute inset-0">
+          <video
+            className="w-full h-full object-cover"
+            src="/assets/Grand Mesob Tower Timelaps.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Grand Mesob Tower concept video"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+        </div>
         <ParallaxSection speed={0.3} className="absolute inset-0">
           <div className="absolute top-40 left-20 text-white w-full h-96">
             <StripePattern opacity={0.04} />
@@ -158,10 +171,20 @@ export default function BusinessPage() {
             </div>
 
             <div className="bg-gradient-to-br from-white/5 to-white/0 h-[600px] flex items-center justify-center border border-white/10">
-              <div className="text-center text-white/40 text-sm uppercase tracking-wider">
+              {/* <div className="text-center text-white/40 text-sm uppercase tracking-wider">
                 Office Floor Visualization
                 <br />
                 <span className="text-xs">(Render Placeholder)</span>
+                
+              </div> */}
+              <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+                <Image
+                  src="/assets/GrandMesobTowerOfficeSection.png"
+                  alt="Culture and Heritage"
+                  fill
+                  className="object-cover"
+                  priority={false}
+                />
               </div>
             </div>
           </div>

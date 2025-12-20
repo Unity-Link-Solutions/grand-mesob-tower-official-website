@@ -7,9 +7,9 @@ export default function PatternDivider({ variant }: PatternDividerProps) {
     return (
       <div className="w-full h-24 flex items-center justify-center overflow-hidden opacity-20">
         <svg
-          width="100%"
+          width="100vw"
           height="100"
-          viewBox="0 0 1200 100"
+          viewBox="0 0 100vw 100"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -36,14 +36,14 @@ export default function PatternDivider({ variant }: PatternDividerProps) {
               className="text-oxidized-brass"
             />
           </pattern>
-          <rect width="1200" height="100" fill="url(#mesob-pattern)" />
+          <rect width="100vw" height="100" fill="url(#mesob-pattern)" />
         </svg>
       </div>
     );
   }
 
   return (
-    <div className="w-full h-24 flex items-center justify-center overflow-hidden opacity-20">
+    <div className="w-full h-24 flex items-center justify-center overflow-hidden opacity-30">
       <svg
         width="100vw"
         height="100"

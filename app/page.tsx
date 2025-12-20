@@ -1,10 +1,7 @@
 "use client";
 
-import {
-  MesobPattern,
-  DiamondPattern,
-  TrianglePattern,
-} from "./components/EthiopianPatterns";
+import { MesobPattern, TrianglePattern } from "./components/EthiopianPatterns";
+import Image from "next/image";
 import Link from "next/link";
 import GeezSeparator from "./components/geez_separator";
 import PatternDivider from "./components/pattern_devider";
@@ -92,9 +89,9 @@ export default function Home() {
           className="absolute  w-full h-full text-black/5 pointer-events-none "
           aria-hidden="true"
         >
-          {/* <TrianglePattern opacity={0.5} className="rotate-90" /> */}
+          <TrianglePattern opacity={0.5} className="rotate-90" />
           {/* <MesobPattern opacity={1.08} /> */}
-          <DiamondPattern opacity={1} />
+          {/* <DiamondPattern opacity={1} /> */}
         </div>
 
         <div className="max-w-7xl mx-auto relative py-32 z-20">
@@ -111,7 +108,15 @@ export default function Home() {
             {/* Culture & Heritage */}
             <div className="group relative">
               <div className="mb-6 overflow-hidden">
-                <div className="w-full h-80 bg-gradient-to-br from-[#2d5a3d]/10 to-[#c8a882]/10 group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+                  <Image
+                    src="/assets/cultural Heritage.png"
+                    alt="Culture and Heritage"
+                    fill
+                    className="object-cover"
+                    priority={false}
+                  />
+                </div>
               </div>
               <h3 className="font-playfair text-2xl mb-4">
                 Culture & Heritage
@@ -132,33 +137,19 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Business & Innovation */}
-            <div className="group">
-              <div className="mb-6 overflow-hidden">
-                <div className="w-full h-80 bg-gradient-to-br from-[#c8a882]/10 to-black/10 group-hover:scale-105 transition-transform duration-700"></div>
-              </div>
-              <h3 className="font-playfair text-2xl mb-4">
-                Business & Innovation
-              </h3>
-              <p className="text-black/70 leading-relaxed mb-6">
-                Grade-A office spaces, financial hubs, and conference facilities
-                <strong className="text-black"> to be designed</strong> for
-                African and global business leaders. A beacon for innovation and
-                economic growth.
-              </p>
-              <Link
-                href="/business"
-                className="text-black font-medium text-sm uppercase tracking-wider hover:text-[#c8a882] transition-colors inline-flex items-center gap-2"
-              >
-                Learn More
-                <span className="text-lg">→</span>
-              </Link>
-            </div>
-
             {/* Hospitality & Experiences */}
             <div className="group">
               <div className="mb-6 overflow-hidden">
-                <div className="w-full h-80 bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/10 group-hover:scale-105 transition-transform duration-700"></div>
+                {/* <div className="w-full h-80 bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/10 group-hover:scale-105 transition-transform duration-700"></div> */}
+                <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+                  <Image
+                    src="/assets/hospitality and experiences.png"
+                    alt="Culture and Heritage"
+                    fill
+                    className="object-cover"
+                    priority={false}
+                  />
+                </div>
               </div>
               <h3 className="font-playfair text-2xl mb-4">
                 Hospitality & Experiences
@@ -177,12 +168,49 @@ export default function Home() {
                 <span className="text-lg">→</span>
               </Link>
             </div>
+
+            {/* Business & Innovation */}
+            <div className="group">
+              <div className="mb-6 overflow-hidden">
+                {/* <div className="w-full h-80 bg-gradient-to-br from-[#c8a882]/10 to-black/10 group-hover:scale-105 transition-transform duration-700"></div> */}
+                <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+                  <Image
+                    src="/assets/business and innovations.png"
+                    alt="Culture and Heritage"
+                    fill
+                    className="object-cover"
+                    priority={false}
+                  />
+                </div>
+              </div>
+              <h3 className="font-playfair text-2xl mb-4">
+                Business & Innovation
+              </h3>
+              <p className="text-black/70 leading-relaxed mb-6">
+                Grade-A office spaces, financial hubs, and conference facilities
+                <strong className="text-black"> to be designed</strong> for
+                African and global business leaders. A beacon for innovation and
+                economic growth.
+              </p>
+              <Link
+                href="/business"
+                className="text-black font-medium text-sm uppercase tracking-wider hover:text-[#c8a882] transition-colors inline-flex items-center gap-2"
+              >
+                Learn More
+                <span className="text-lg">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Tower at a Glance Section */}
       <section className="relative  bg-[#0a0a0a] text-white">
+        <div className="absolute  w-full  " aria-hidden="true">
+          {/* <TrianglePattern opacity={0.5} className="rotate-90" /> */}
+          <MesobPattern opacity={0.02} />
+          {/* <DiamondPattern opacity={1} /> */}
+        </div>
         <PatternDivider variant="tibeb" />
 
         <div className="max-w-7xl py-32 px-6 mx-auto">
@@ -260,6 +288,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <PatternDivider variant="tibeb" />
       </section>
 
       {/* Investors & Partners Section */}
@@ -326,8 +355,10 @@ export default function Home() {
       </section>
 
       {/* Timeline/Status Section */}
-      <section className="relative py-32 px-6 bg-white text-black">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative  bg-white text-black">
+        <PatternDivider variant="mesob" />
+
+        <div className="max-w-6xl py-32 px-6 mx-auto">
           <div className="text-center mb-20">
             <p className="text-[#c8a882] text-sm uppercase tracking-[0.3em] mb-4">
               Our Journey
@@ -419,6 +450,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <PatternDivider variant="mesob" />
       </section>
 
       {/* Call to Action Section */}

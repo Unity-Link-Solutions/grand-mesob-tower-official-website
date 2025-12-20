@@ -1,14 +1,26 @@
-'use client';
+"use client";
 
-import { TrianglePattern, MesobPattern } from '../components/EthiopianPatterns';
-import ParallaxSection from '../components/ParallaxSection';
-import Link from 'next/link';
+import { TrianglePattern, MesobPattern } from "../components/EthiopianPatterns";
+import ParallaxSection from "../components/ParallaxSection";
+import Link from "next/link";
 
 export default function ExperiencesPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+        <div className="absolute inset-0">
+          <video
+            className="w-full h-full object-cover"
+            src="/assets/grandmesobtowerexperiences.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Grand Mesob Tower concept video"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+        </div>
         <ParallaxSection speed={0.3} className="absolute inset-0">
           <div className="absolute bottom-20 left-10 text-white w-80 h-80">
             <TrianglePattern opacity={0.06} />
@@ -24,8 +36,8 @@ export default function ExperiencesPage() {
               Unforgettable Moments
             </h1>
             <p className="text-white/80 text-xl max-w-3xl mx-auto leading-relaxed">
-              From sky-high observation decks to world-class dining and luxury 
-              accommodations, Grand Mesob Tower offers experiences that will 
+              From sky-high observation decks to world-class dining and luxury
+              accommodations, Grand Mesob Tower offers experiences that will
               create lasting memories.
             </p>
           </ParallaxSection>
@@ -38,7 +50,8 @@ export default function ExperiencesPage() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 h-[500px] flex items-center justify-center">
               <div className="text-center text-black/40 text-sm uppercase tracking-wider">
-                Observation Deck View<br />
+                Observation Deck View
+                <br />
                 <span className="text-xs">(Visualization Placeholder)</span>
               </div>
             </div>
@@ -50,14 +63,14 @@ export default function ExperiencesPage() {
                 Observation Decks
               </h2>
               <p className="text-black/70 text-lg leading-relaxed mb-6">
-                Ascend to the highest points of Addis Ababa and experience 
-                breathtaking 360° panoramic views of the city and surrounding 
+                Ascend to the highest points of Addis Ababa and experience
+                breathtaking 360° panoramic views of the city and surrounding
                 Ethiopian highlands.
               </p>
               <p className="text-black/70 text-lg leading-relaxed mb-6">
-                Multiple observation levels offer unique perspectives—from open-air 
-                terraces to climate-controlled indoor viewing galleries with 
-                floor-to-ceiling glass walls.
+                Multiple observation levels offer unique perspectives—from
+                open-air terraces to climate-controlled indoor viewing galleries
+                with floor-to-ceiling glass walls.
               </p>
               <ul className="space-y-3 text-black/70">
                 <li className="flex items-start gap-3">
@@ -97,7 +110,7 @@ export default function ExperiencesPage() {
               Dining Experiences
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              A collection of restaurants, cafes, and lounges celebrating 
+              A collection of restaurants, cafes, and lounges celebrating
               Ethiopian cuisine and international flavors.
             </p>
           </div>
@@ -106,7 +119,7 @@ export default function ExperiencesPage() {
             <div className="p-8 bg-white/5 border border-white/10 hover:border-[#c8a882]/50 transition-colors">
               <h3 className="font-playfair text-2xl mb-4">Sky Lounge & Bar</h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Sophisticated cocktail lounge on the upper floors with stunning 
+                Sophisticated cocktail lounge on the upper floors with stunning
                 views, signature drinks, and live entertainment.
               </p>
               <div className="text-[#c8a882] text-sm uppercase tracking-wider">
@@ -115,9 +128,11 @@ export default function ExperiencesPage() {
             </div>
 
             <div className="p-8 bg-white/5 border border-white/10 hover:border-[#c8a882]/50 transition-colors">
-              <h3 className="font-playfair text-2xl mb-4">Fine Dining Restaurant</h3>
+              <h3 className="font-playfair text-2xl mb-4">
+                Fine Dining Restaurant
+              </h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Michelin-caliber dining experience featuring modern Ethiopian 
+                Michelin-caliber dining experience featuring modern Ethiopian
                 cuisine and international gastronomy.
               </p>
               <div className="text-[#c8a882] text-sm uppercase tracking-wider">
@@ -126,9 +141,11 @@ export default function ExperiencesPage() {
             </div>
 
             <div className="p-8 bg-white/5 border border-white/10 hover:border-[#c8a882]/50 transition-colors">
-              <h3 className="font-playfair text-2xl mb-4">Traditional Coffee House</h3>
+              <h3 className="font-playfair text-2xl mb-4">
+                Traditional Coffee House
+              </h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Authentic Ethiopian coffee ceremony experience in an elegant 
+                Authentic Ethiopian coffee ceremony experience in an elegant
                 setting celebrating coffee's birthplace.
               </p>
               <div className="text-[#c8a882] text-sm uppercase tracking-wider">
@@ -137,10 +154,12 @@ export default function ExperiencesPage() {
             </div>
 
             <div className="p-8 bg-white/5 border border-white/10 hover:border-[#c8a882]/50 transition-colors">
-              <h3 className="font-playfair text-2xl mb-4">Casual Dining & Cafes</h3>
+              <h3 className="font-playfair text-2xl mb-4">
+                Casual Dining & Cafes
+              </h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Variety of cafes, bistros, and casual restaurants throughout 
-                the public and hospitality zones.
+                Variety of cafes, bistros, and casual restaurants throughout the
+                public and hospitality zones.
               </p>
               <div className="text-[#c8a882] text-sm uppercase tracking-wider">
                 Multiple Locations
@@ -158,15 +177,13 @@ export default function ExperiencesPage() {
               <p className="text-[#c8a882] text-sm uppercase tracking-[0.3em] mb-4">
                 Luxury Stays
               </p>
-              <h2 className="font-playfair text-black mb-6">
-                Hotel & Suites
-              </h2>
+              <h2 className="font-playfair text-black mb-6">Hotel & Suites</h2>
               <p className="text-black/70 text-lg leading-relaxed mb-6">
-                The tower's hospitality zone features a world-class hotel with 
+                The tower's hospitality zone features a world-class hotel with
                 suites offering unparalleled luxury, service, and views.
               </p>
               <p className="text-black/70 text-lg leading-relaxed mb-6">
-                Each room and suite is designed with contemporary elegance while 
+                Each room and suite is designed with contemporary elegance while
                 incorporating Ethiopian design elements and craftsmanship.
               </p>
               <ul className="space-y-3 text-black/70 mb-8">
@@ -190,7 +207,8 @@ export default function ExperiencesPage() {
             </div>
             <div className="bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/20 h-[500px] flex items-center justify-center">
               <div className="text-center text-black/40 text-sm uppercase tracking-wider">
-                Hotel Suite Interior<br />
+                Hotel Suite Interior
+                <br />
                 <span className="text-xs">(Visualization Placeholder)</span>
               </div>
             </div>
@@ -209,7 +227,7 @@ export default function ExperiencesPage() {
               Events & Celebrations
             </h2>
             <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Host unforgettable events in spectacular venues with world-class 
+              Host unforgettable events in spectacular venues with world-class
               service and breathtaking backdrops.
             </p>
           </div>
@@ -219,8 +237,8 @@ export default function ExperiencesPage() {
               <div className="text-5xl mb-4">💍</div>
               <h4 className="font-playfair text-xl mb-3">Weddings</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Celebrate your special day in elegant venues with panoramic 
-                city views and exceptional service.
+                Celebrate your special day in elegant venues with panoramic city
+                views and exceptional service.
               </p>
             </div>
 
@@ -228,8 +246,8 @@ export default function ExperiencesPage() {
               <div className="text-5xl mb-4">🎭</div>
               <h4 className="font-playfair text-xl mb-3">Cultural Events</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Host performances, exhibitions, and cultural celebrations in 
-                our dedicated event spaces.
+                Host performances, exhibitions, and cultural celebrations in our
+                dedicated event spaces.
               </p>
             </div>
 
@@ -237,7 +255,7 @@ export default function ExperiencesPage() {
               <div className="text-5xl mb-4">🎉</div>
               <h4 className="font-playfair text-xl mb-3">Private Functions</h4>
               <p className="text-white/70 text-sm leading-relaxed">
-                Exclusive venues for corporate events, galas, and private 
+                Exclusive venues for corporate events, galas, and private
                 celebrations of any scale.
               </p>
             </div>
@@ -252,11 +270,9 @@ export default function ExperiencesPage() {
             <p className="text-[#c8a882] text-sm uppercase tracking-[0.3em] mb-4">
               Cultural Journey
             </p>
-            <h2 className="font-playfair text-black mb-6">
-              Museum Floors
-            </h2>
+            <h2 className="font-playfair text-black mb-6">Museum Floors</h2>
             <p className="text-black/70 text-lg max-w-3xl mx-auto">
-              Journey through Ethiopia's rich history, diverse regions, and 
+              Journey through Ethiopia's rich history, diverse regions, and
               cultural heritage across dedicated museum and gallery floors.
             </p>
           </div>
@@ -265,15 +281,15 @@ export default function ExperiencesPage() {
             <div className="p-6 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
               <h4 className="font-playfair text-lg mb-2">Heritage Museum</h4>
               <p className="text-black/60 text-sm">
-                Ancient civilizations, historical artifacts, and Ethiopia's place 
-                in human history.
+                Ancient civilizations, historical artifacts, and Ethiopia's
+                place in human history.
               </p>
             </div>
 
             <div className="p-6 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
               <h4 className="font-playfair text-lg mb-2">Regional Galleries</h4>
               <p className="text-black/60 text-sm">
-                Dedicated spaces celebrating each Ethiopian region's unique 
+                Dedicated spaces celebrating each Ethiopian region's unique
                 culture and traditions.
               </p>
             </div>
@@ -286,9 +302,12 @@ export default function ExperiencesPage() {
             </div>
 
             <div className="p-6 border border-black/10 hover:border-[#c8a882]/50 transition-colors">
-              <h4 className="font-playfair text-lg mb-2">Interactive Exhibits</h4>
+              <h4 className="font-playfair text-lg mb-2">
+                Interactive Exhibits
+              </h4>
               <p className="text-black/60 text-sm">
-                Engaging multimedia experiences exploring Ethiopian culture and innovation.
+                Engaging multimedia experiences exploring Ethiopian culture and
+                innovation.
               </p>
             </div>
           </div>
@@ -307,11 +326,10 @@ export default function ExperiencesPage() {
       {/* Call to Action */}
       <section className="relative py-24 px-6 bg-black text-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-playfair text-4xl mb-6">
-            Plan Your Visit
-          </h2>
+          <h2 className="font-playfair text-4xl mb-6">Plan Your Visit</h2>
           <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-            Stay updated on opening dates and special experiences at Grand Mesob Tower.
+            Stay updated on opening dates and special experiences at Grand Mesob
+            Tower.
           </p>
           <Link
             href="/contact"
@@ -324,4 +342,3 @@ export default function ExperiencesPage() {
     </div>
   );
 }
-

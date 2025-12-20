@@ -10,17 +10,29 @@ export default function TowerPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
         {/* Background Pattern */}
+        {/* <div className="absolute inset-0">
+          <video
+            className="w-full h-full object-cover"
+            src="/assets/Grand Mesob Tower Timelaps.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Grand Mesob Tower concept video"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+        </div> */}
         <div className="absolute top-40 right-20 text-white w-96 h-96 opacity-5 pointer-events-none">
-          <MesobPattern opacity={0.06} />
+          <MesobPattern opacity={1.06} />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#c8a882]/30 bg-[#c8a882]/10 mb-6">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#c8a882]/30 bg-[#c8a882]/10 mb-6">
             <div className="w-2 h-2 rounded-full bg-[#c8a882] animate-pulse"></div>
             <span className="text-[#c8a882] text-xs md:text-sm uppercase tracking-widest font-medium">
               Design Concept
             </span>
-          </div>
+          </div> */}
 
           <p className="text-[#c8a882] text-sm uppercase tracking-[0.3em] mb-6">
             Architecture & Vision

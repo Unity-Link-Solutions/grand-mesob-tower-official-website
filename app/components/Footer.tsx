@@ -1,10 +1,13 @@
-import Link from 'next/link';
+import Link from "next/link";
+import PatternDivider from "./pattern_devider";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-black border-t border-white/10">
+      <PatternDivider variant="tibeb" />
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand Column */}
@@ -13,7 +16,7 @@ export default function Footer() {
               Grand Mesob Tower
             </h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              A landmark tower for Addis Ababa, celebrating Ethiopian culture, 
+              A landmark tower for Addis Ababa, celebrating Ethiopian culture,
               innovation, and world-class hospitality.
             </p>
           </div>
@@ -90,7 +93,8 @@ export default function Footer() {
               Location
             </h4>
             <p className="text-white/60 text-sm leading-relaxed">
-              Addis Ababa<br />
+              Addis Ababa
+              <br />
               Ethiopia
             </p>
           </div>
@@ -120,4 +124,3 @@ export default function Footer() {
     </footer>
   );
 }
-
