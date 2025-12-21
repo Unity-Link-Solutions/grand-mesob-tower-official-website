@@ -125,3 +125,32 @@ a, button {
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in forwards;
 }
+
+/* Ornate photo frame styling */
+.frame-wood {
+  position: relative;
+  padding: 0.75rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2c1a0c, #5f3b1e 28%, #c49a6c 50%, #5f3b1e 72%, #2c1a0c);
+  box-shadow:
+    0 20px 40px -24px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.frame-wood::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.frame-wood-inner {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.5));
+}

@@ -3,6 +3,7 @@
 import { TrianglePattern, MesobPattern } from "../components/EthiopianPatterns";
 import ParallaxSection from "../components/ParallaxSection";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ExperiencesPage() {
   return (
@@ -48,11 +49,19 @@ export default function ExperiencesPage() {
       <section className="relative py-32 px-6 bg-white text-black">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1 bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 h-[500px] flex items-center justify-center">
-              <div className="text-center text-black/40 text-sm uppercase tracking-wider">
-                Observation Deck View
-                <br />
-                <span className="text-xs">(Visualization Placeholder)</span>
+            <div className="order-2 md:order-1">
+              <div className="frame-wood h-full">
+                <div className="frame-wood-inner bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 h-[500px] flex items-center justify-center">
+                  <div className="text-center text-black/40 text-sm uppercase tracking-wider">
+                    <Image
+                      src="/assets/observation_decks.png"
+                      alt="Culture and Heritage"
+                      fill
+                      className="object-cover"
+                      priority={false}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <div className="order-1 md:order-2">
@@ -205,11 +214,19 @@ export default function ExperiencesPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/20 h-[500px] flex items-center justify-center">
-              <div className="text-center text-black/40 text-sm uppercase tracking-wider">
-                Hotel Suite Interior
-                <br />
-                <span className="text-xs">(Visualization Placeholder)</span>
+            <div>
+              <div className="frame-wood h-full">
+                <div className="frame-wood-inner bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/20 h-[500px] flex items-center justify-center">
+                  <div className="text-center text-black/40 text-sm uppercase tracking-wider">
+                    <Image
+                      src="/assets/luxury_stays.png"
+                      alt="Culture and Heritage"
+                      fill
+                      className="object-cover"
+                      priority={false}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

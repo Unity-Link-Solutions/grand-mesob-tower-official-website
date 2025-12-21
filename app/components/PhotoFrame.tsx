@@ -5,7 +5,10 @@ interface PhotoFrameProps {
   className?: string;
 }
 
-export default function PhotoFrame({ children, className = "" }: PhotoFrameProps) {
+export default function PhotoFrame({
+  children,
+  className = "",
+}: PhotoFrameProps) {
   return (
     <div className={`inline-block ${className}`}>
       {/* Outer wood frame */}

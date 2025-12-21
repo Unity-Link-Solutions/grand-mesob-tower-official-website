@@ -107,8 +107,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12 relative z-50">
             {/* Culture & Heritage */}
             <div className="group relative">
-              <div className="mb-6 overflow-hidden">
-                <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+              <div className="frame-wood mb-6 overflow-hidden">
+                <div className="frame-wood-inner bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
                   <Image
                     src="/assets/cultural Heritage.png"
                     alt="Culture and Heritage"
@@ -139,9 +139,9 @@ export default function Home() {
 
             {/* Hospitality & Experiences */}
             <div className="group">
-              <div className="mb-6 overflow-hidden">
+              <div className="frame-wood mb-6 overflow-hidden">
                 {/* <div className="w-full h-80 bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/10 group-hover:scale-105 transition-transform duration-700"></div> */}
-                <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+                <div className="frame-wood-inner bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
                   <Image
                     src="/assets/hospitality and experiences.png"
                     alt="Culture and Heritage"
@@ -171,9 +171,9 @@ export default function Home() {
 
             {/* Business & Innovation */}
             <div className="group">
-              <div className="mb-6 overflow-hidden">
+              <div className="frame-wood mb-6 overflow-hidden">
                 {/* <div className="w-full h-80 bg-gradient-to-br from-[#c8a882]/10 to-black/10 group-hover:scale-105 transition-transform duration-700"></div> */}
-                <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
+                <div className="frame-wood-inner bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
                   <Image
                     src="/assets/business and innovations.png"
                     alt="Culture and Heritage"
