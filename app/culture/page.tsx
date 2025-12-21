@@ -16,14 +16,14 @@ export default function CulturePage() {
         <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover"
-            src="/assets/Grand_Mesob_Tower_to_Day_to_Night_Museum_Video.mp4"
+            src="/assets/Grand_Mesob_Tower_to_Day_to_Night_Museum_Video.MOV"
             autoPlay
             muted
             loop
             playsInline
             aria-label="Grand Mesob Tower concept video"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/55 to-black/90" />
         </div>
         <ParallaxSection speed={0.3} className="absolute inset-0">
           <div className="absolute top-32 right-16 text-white w-96 h-96">

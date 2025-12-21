@@ -1,49 +1,55 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { MesobPattern } from '../components/EthiopianPatterns';
-import ParallaxSection from '../components/ParallaxSection';
+import { useState } from "react";
+import { MesobPattern } from "../components/EthiopianPatterns";
+import ParallaxSection from "../components/ParallaxSection";
 
 export default function ContactPage() {
-  const [formType, setFormType] = useState<'general' | 'business'>('general');
+  const [formType, setFormType] = useState<"general" | "business">("general");
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    organization: '',
-    subject: '',
-    message: '',
-    inquiryType: '',
+    name: "",
+    email: "",
+    phone: "",
+    organization: "",
+    subject: "",
+    message: "",
+    inquiryType: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission (replace with actual API call)
     setTimeout(() => {
       setIsSubmitting(false);
-      setSubmitStatus('success');
+      setSubmitStatus("success");
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        organization: '',
-        subject: '',
-        message: '',
-        inquiryType: '',
+        name: "",
+        email: "",
+        phone: "",
+        organization: "",
+        subject: "",
+        message: "",
+        inquiryType: "",
       });
-      
+
       // Reset success message after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setTimeout(() => setSubmitStatus("idle"), 5000);
     }, 1500);
   };
 
@@ -66,7 +72,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-white/80 text-xl max-w-3xl mx-auto leading-relaxed">
-              Whether you're interested in visiting, investing, partnering, or 
+              Whether you're interested in visiting, investing, partnering, or
               learning more about Grand Mesob Tower, we'd love to hear from you.
             </p>
           </ParallaxSection>
@@ -81,7 +87,8 @@ export default function ContactPage() {
               <div className="text-4xl mb-4">📍</div>
               <h3 className="font-playfair text-xl mb-3">Location</h3>
               <p className="text-black/70">
-                Addis Ababa<br />
+                Addis Ababa
+                <br />
                 Ethiopia
               </p>
             </div>
@@ -90,12 +97,18 @@ export default function ContactPage() {
               <div className="text-4xl mb-4">✉️</div>
               <h3 className="font-playfair text-xl mb-3">Email</h3>
               <p className="text-black/70">
-                <a href="mailto:info@grandmesobtower.com" className="hover:text-[#c8a882] transition-colors">
+                <a
+                  href="mailto:info@grandmesobtower.com"
+                  className="hover:text-[#c8a882] transition-colors"
+                >
                   info@grandmesobtower.com
                 </a>
               </p>
               <p className="text-black/70 mt-2">
-                <a href="mailto:invest@grandmesobtower.com" className="hover:text-[#c8a882] transition-colors">
+                <a
+                  href="mailto:invest@grandmesobtower.com"
+                  className="hover:text-[#c8a882] transition-colors"
+                >
                   invest@grandmesobtower.com
                 </a>
               </p>
@@ -104,9 +117,7 @@ export default function ContactPage() {
             <div className="text-center p-8">
               <div className="text-4xl mb-4">📞</div>
               <h3 className="font-playfair text-xl mb-3">Phone</h3>
-              <p className="text-black/70">
-                +251 (0)11 XXX XXXX
-              </p>
+              <p className="text-black/70">+251 9112 076 43</p>
             </div>
           </div>
         </div>
@@ -119,21 +130,21 @@ export default function ContactPage() {
           <div className="flex justify-center mb-12">
             <div className="inline-flex border border-white/20 rounded-sm overflow-hidden">
               <button
-                onClick={() => setFormType('general')}
+                onClick={() => setFormType("general")}
                 className={`px-8 py-3 text-sm uppercase tracking-wider transition-all ${
-                  formType === 'general'
-                    ? 'bg-white text-black'
-                    : 'bg-transparent text-white hover:bg-white/10'
+                  formType === "general"
+                    ? "bg-white text-black"
+                    : "bg-transparent text-white hover:bg-white/10"
                 }`}
               >
                 General Inquiry
               </button>
               <button
-                onClick={() => setFormType('business')}
+                onClick={() => setFormType("business")}
                 className={`px-8 py-3 text-sm uppercase tracking-wider transition-all ${
-                  formType === 'business'
-                    ? 'bg-white text-black'
-                    : 'bg-transparent text-white hover:bg-white/10'
+                  formType === "business"
+                    ? "bg-white text-black"
+                    : "bg-transparent text-white hover:bg-white/10"
                 }`}
               >
                 Business Inquiry
@@ -142,10 +153,11 @@ export default function ContactPage() {
           </div>
 
           {/* Success Message */}
-          {submitStatus === 'success' && (
+          {submitStatus === "success" && (
             <div className="mb-8 p-6 bg-[#2d5a3d] border border-[#c8a882] text-white rounded-sm">
               <p className="text-center">
-                Thank you for your message! We'll get back to you as soon as possible.
+                Thank you for your message! We'll get back to you as soon as
+                possible.
               </p>
             </div>
           )}
@@ -154,7 +166,10 @@ export default function ContactPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label htmlFor="name" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+              >
                 Full Name *
               </label>
               <input
@@ -172,7 +187,10 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+                >
                   Email Address *
                 </label>
                 <input
@@ -189,7 +207,10 @@ export default function ContactPage() {
 
               {/* Phone */}
               <div>
-                <label htmlFor="phone" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+                >
                   Phone Number
                 </label>
                 <input
@@ -205,9 +226,12 @@ export default function ContactPage() {
             </div>
 
             {/* Organization (Business form only) */}
-            {formType === 'business' && (
+            {formType === "business" && (
               <div>
-                <label htmlFor="organization" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+                <label
+                  htmlFor="organization"
+                  className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+                >
                   Organization / Company
                 </label>
                 <input
@@ -223,9 +247,12 @@ export default function ContactPage() {
             )}
 
             {/* Inquiry Type (Business form only) */}
-            {formType === 'business' && (
+            {formType === "business" && (
               <div>
-                <label htmlFor="inquiryType" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+                <label
+                  htmlFor="inquiryType"
+                  className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+                >
                   Inquiry Type *
                 </label>
                 <select
@@ -233,7 +260,7 @@ export default function ContactPage() {
                   name="inquiryType"
                   value={formData.inquiryType}
                   onChange={handleInputChange}
-                  required={formType === 'business'}
+                  required={formType === "business"}
                   className="w-full px-4 py-3 bg-white/5 border border-white/20 text-white focus:border-[#c8a882] focus:outline-none transition-colors"
                 >
                   <option value="">Select inquiry type</option>
@@ -248,7 +275,10 @@ export default function ContactPage() {
 
             {/* Subject */}
             <div>
-              <label htmlFor="subject" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+              <label
+                htmlFor="subject"
+                className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+              >
                 Subject *
               </label>
               <input
@@ -265,7 +295,10 @@ export default function ContactPage() {
 
             {/* Message */}
             <div>
-              <label htmlFor="message" className="block text-sm uppercase tracking-wider text-white/80 mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm uppercase tracking-wider text-white/80 mb-2"
+              >
                 Message *
               </label>
               <textarea
@@ -287,11 +320,11 @@ export default function ContactPage() {
                 disabled={isSubmitting}
                 className={`w-full px-8 py-4 text-sm uppercase tracking-widest font-medium transition-all ${
                   isSubmitting
-                    ? 'bg-white/20 text-white/40 cursor-not-allowed'
-                    : 'bg-white text-black hover:bg-[#c8a882] hover:text-white'
+                    ? "bg-white/20 text-white/40 cursor-not-allowed"
+                    : "bg-white text-black hover:bg-[#c8a882] hover:text-white"
                 }`}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </div>
 
@@ -313,37 +346,45 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-6 border border-black/10">
-              <h4 className="font-playfair text-lg mb-3">When will the tower open?</h4>
+              <h4 className="font-playfair text-lg mb-3">
+                When will the tower open?
+              </h4>
               <p className="text-black/70 text-sm leading-relaxed">
-                We're currently in the design and planning phase. Construction 
-                timelines will be announced as we secure partnerships and finalize 
-                development plans. Stay tuned for updates.
+                We're currently in the design and planning phase. Construction
+                timelines will be announced as we secure partnerships and
+                finalize development plans. Stay tuned for updates.
               </p>
             </div>
 
             <div className="p-6 border border-black/10">
-              <h4 className="font-playfair text-lg mb-3">Can I visit the tower now?</h4>
+              <h4 className="font-playfair text-lg mb-3">
+                Can I visit the tower now?
+              </h4>
               <p className="text-black/70 text-sm leading-relaxed">
-                The tower is not yet built. We'll announce visitor information 
-                and booking details as we approach completion. Sign up for our 
+                The tower is not yet built. We'll announce visitor information
+                and booking details as we approach completion. Sign up for our
                 updates to be notified.
               </p>
             </div>
 
             <div className="p-6 border border-black/10">
-              <h4 className="font-playfair text-lg mb-3">How can I invest in the project?</h4>
+              <h4 className="font-playfair text-lg mb-3">
+                How can I invest in the project?
+              </h4>
               <p className="text-black/70 text-sm leading-relaxed">
-                Please use the Business Inquiry form above and select "Investment 
-                Opportunity" to connect with our investment team. We'll provide 
-                detailed information about investment models.
+                Please use the Business Inquiry form above and select
+                "Investment Opportunity" to connect with our investment team.
+                We'll provide detailed information about investment models.
               </p>
             </div>
 
             <div className="p-6 border border-black/10">
-              <h4 className="font-playfair text-lg mb-3">Are office spaces available for lease?</h4>
+              <h4 className="font-playfair text-lg mb-3">
+                Are office spaces available for lease?
+              </h4>
               <p className="text-black/70 text-sm leading-relaxed">
-                Yes, we're accepting expressions of interest for Grade-A office 
-                spaces. Contact us via the Business Inquiry form with "Office 
+                Yes, we're accepting expressions of interest for Grade-A office
+                spaces. Contact us via the Business Inquiry form with "Office
                 Space Leasing" selected.
               </p>
             </div>
@@ -363,4 +404,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

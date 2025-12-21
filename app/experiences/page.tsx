@@ -216,7 +216,7 @@ export default function ExperiencesPage() {
             </div>
             <div>
               <div className="frame-wood h-full">
-                <div className="frame-wood-inner bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/20 h-[500px] flex items-center justify-center">
+                <div className="frame-wood-inner bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/20 h-80 flex items-center justify-center">
                   <div className="text-center text-black/40 text-sm uppercase tracking-wider">
                     <Image
                       src="/assets/luxury_stays.png"

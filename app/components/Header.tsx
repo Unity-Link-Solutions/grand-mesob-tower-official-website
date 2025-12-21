@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,16 +46,29 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-white/90 hover:text-white text-sm tracking-wide uppercase font-light transition-colors relative group"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-px bg-[#c8a882] transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive =
+                link.href === '/'
+                  ? pathname === '/'
+                  : pathname?.startsWith(link.href);
+
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`${
+                    isActive ? 'text-white' : 'text-white/90 hover:text-white'
+                  } text-sm tracking-wide uppercase font-light transition-colors relative group`}
+                >
+                  {link.label}
+                  <span
+                    className={`absolute bottom-0 left-0 h-px bg-[#c8a882] transition-all duration-300 ${
+                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  ></span>
+                </Link>
+              );
+            })}
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,20 +104,28 @@ export default function Header() {
           }`}
         >
           <div className="py-6 space-y-4 border-t border-white/10">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block text-white/90 hover:text-white text-base tracking-wide uppercase font-light transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive =
+                link.href === '/'
+                  ? pathname === '/'
+                  : pathname?.startsWith(link.href);
+
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block text-base tracking-wide uppercase font-light transition-colors ${
+                    isActive ? 'text-white' : 'text-white/90 hover:text-white'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </nav>
     </header>
   );
 }
-

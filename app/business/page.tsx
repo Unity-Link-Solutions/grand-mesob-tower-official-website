@@ -20,7 +20,7 @@ export default function BusinessPage() {
             playsInline
             aria-label="Grand Mesob Tower concept video"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/55 to-black/90" />
         </div>
         <ParallaxSection speed={0.3} className="absolute inset-0">
           <div className="absolute top-40 left-20 text-white w-full h-96">
@@ -170,13 +170,7 @@ export default function BusinessPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-white/5 to-white/0 h-[600px] flex items-center justify-center border border-white/10">
-              {/* <div className="text-center text-white/40 text-sm uppercase tracking-wider">
-                Office Floor Visualization
-                <br />
-                <span className="text-xs">(Render Placeholder)</span>
-                
-              </div> */}
+            <div className="frame-wood bg-gradient-to-br from-white/5 to-white/0 flex items-center justify-center border border-white/10">
               <div className="relative w-full h-80 group-hover:scale-105 transition-transform duration-700">
                 <Image
                   src="/assets/GrandMesobTowerOfficeSection.png"
