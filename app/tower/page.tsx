@@ -3,6 +3,8 @@
 import { MesobPattern, DiamondPattern } from "../components/EthiopianPatterns";
 import TowerBuildAnimation from "../components/TowerBuildAnimation";
 import Link from "next/link";
+import Image from "next/image";
+import PhotoFrame from "../components/PhotoFrame";
 
 export default function TowerPage() {
   return (
@@ -10,18 +12,17 @@ export default function TowerPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
         {/* Background Pattern */}
-        {/* <div className="absolute inset-0">
-          <video
-            className="w-full h-full object-cover"
-            src="/assets/Grand Mesob Tower Timelaps.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            aria-label="Grand Mesob Tower concept video"
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/grandmesobtower.png"
+            alt="Culture and Heritage"
+            fill
+            // width={400}
+            className="object-cover w-[320px] h-[420px]"
+            priority={false}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
-        </div> */}
+        </div>
         <div className="absolute top-40 right-20 text-white w-96 h-96 opacity-5 pointer-events-none">
           <MesobPattern opacity={1.06} />
         </div>
@@ -49,8 +50,48 @@ export default function TowerPage() {
         </div>
       </section>
 
+      {/* Founder Spotlight */}
+      <section className="relative py-24 px-6 bg-gradient-to-br from-[#0f0f0f] via-[#0a0a0a] to-[#121212] text-white overflow-hidden">
+        <div className="absolute inset-0 text-white/5 pointer-events-none">
+          <MesobPattern />
+        </div>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-[320px,1fr] gap-12 items-center relative z-10">
+          <PhotoFrame className="justify-self-center md:justify-self-start shadow-2xl">
+            <Image
+              src="/assets/tsegaye.JPG"
+              alt="Tsegaye Teklu, Founder of Grand Mesob Tower"
+              width={900}
+              height={1200}
+              className="object-cover w-[320px] h-[480px]"
+              priority
+            />
+          </PhotoFrame>
+
+          <div>
+            <p className="text-[#c8a882] text-sm uppercase tracking-[0.3em] mb-4">
+              Founder
+            </p>
+            <h2 className="font-playfair text-white text-3xl mb-6">
+              Tsegaye Teklu
+            </h2>
+            <p className="text-white/75 text-lg leading-relaxed mb-4">
+              Tsegaye Teklu is the visionary founder behind Grand Mesob Tower.
+              His passion for honoring Ethiopia&apos;s heritage while shaping
+              its modern skyline drives the project&apos;s ambition and cultural
+              integrity.
+            </p>
+            <p className="text-white/70 leading-relaxed">
+              From concept to execution, he champions a landmark that brings
+              together business, culture, and hospitality in a single vertical
+              community - an enduring symbol of Ethiopian excellence.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Interactive Tower Building Animation */}
-      <TowerBuildAnimation />
+      {/* <TowerBuildAnimation /> */}
 
       {/* Mesob Inspiration Section */}
       <section className="relative py-32 px-6 bg-white text-black">
@@ -73,7 +114,7 @@ export default function TowerPage() {
                 <strong className="text-black">will translate</strong> this
                 cultural symbol into architecture, creating a vertical community
                 where culture, business, and hospitality
-                <strong className="text-black"> will converge</strong>—just as
+                <strong className="text-black"> will converge</strong>, just as
                 families and friends gather around the mesob.
               </p>
               <p className="text-black/70 text-lg leading-relaxed">
@@ -84,13 +125,18 @@ export default function TowerPage() {
                 engineering and sustainable design principles.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-[#c8a882]/20 to-[#2d5a3d]/10 h-[500px] flex items-center justify-center">
-              <div className="text-center text-black/40 text-sm uppercase tracking-wider">
-                Mesob Visualization
-                <br />
-                <span className="text-xs">
-                  (Architectural Render Placeholder)
-                </span>
+            <div className="frame-wood ">
+              <div className="frame-wood-inner h-80 bg-gradient-to-br from-[#8b3a3a]/10 to-[#c8a882]/20  flex items-center justify-center">
+                <div className="text-center text-black/40 text-sm uppercase tracking-wider">
+                  <Image
+                    src="/assets/concept1.jpeg"
+                    alt="Culture and Heritage"
+                    fill
+                    // width={400}
+                    className="object-cover w-[320px] h-[420px]"
+                    priority={false}
+                  />
+                </div>
               </div>
             </div>
           </div>
