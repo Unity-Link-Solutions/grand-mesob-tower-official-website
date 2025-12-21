@@ -1,7 +1,7 @@
 "use client";
 
 import { MesobPattern, DiamondPattern } from "../components/EthiopianPatterns";
-import TowerBuildAnimation from "../components/TowerBuildAnimation";
+// import TowerBuildAnimation from "../components/TowerBuildAnimation";
 import Link from "next/link";
 import Image from "next/image";
 import PhotoFrame from "../components/PhotoFrame";
@@ -13,13 +13,14 @@ export default function TowerPage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
         {/* Background Pattern */}
         <div className="absolute inset-0">
-          <Image
-            src="/assets/grandmesobtower.png"
-            alt="Culture and Heritage"
-            fill
-            // width={400}
-            className="object-cover w-[320px] h-[420px]"
-            priority={false}
+          <video
+            className="w-full h-full object-cover"
+            src="/assets/grandmesobtower.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Grand Mesob Tower concept video"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
         </div>
@@ -133,7 +134,7 @@ export default function TowerPage() {
                     alt="Culture and Heritage"
                     fill
                     // width={400}
-                    className="object-cover w-[320px] h-[420px]"
+                    className="object-cover"
                     priority={false}
                   />
                 </div>
