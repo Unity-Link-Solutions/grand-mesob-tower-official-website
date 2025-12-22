@@ -19,7 +19,7 @@ export default function TowerPage() {
         <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover"
-            src="/assets/grandmesobtower.mp4"
+            src="/assets/grandmesobtower.mov"
             autoPlay
             muted
             loop

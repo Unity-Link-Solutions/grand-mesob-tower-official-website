@@ -14,7 +14,7 @@ export default function BusinessPage() {
         <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover"
-            src="/assets/Grand Mesob Tower Timelaps.mp4"
+            src="/assets/Grand Mesob Tower Timelaps.mov"
             autoPlay
             muted
             loop

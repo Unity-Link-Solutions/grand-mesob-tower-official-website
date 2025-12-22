@@ -14,7 +14,7 @@ export default function ExperiencesPage() {
         <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover"
-            src="/assets/grandmesobtowerexperiences.mp4"
+            src="/assets/grandmesobtowerexperiences.mov"
             autoPlay
             muted
             loop

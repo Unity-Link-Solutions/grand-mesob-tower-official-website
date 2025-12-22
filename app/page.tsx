@@ -15,7 +15,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover"
-            src="/assets/Grand Mesob Tower .mp4"
+            src="/assets/Grand Mesob Tower .mov"
             autoPlay
             muted
             loop
