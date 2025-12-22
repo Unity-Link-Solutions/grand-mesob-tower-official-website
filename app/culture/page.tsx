@@ -25,7 +25,7 @@ export default function CulturePage() {
             playsInline
             aria-label="Grand Mesob Tower concept video"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/55 to-black/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/20 to-black/60" />
         </div>
         <ParallaxSection speed={0.3} className="absolute inset-0">
           <div className="absolute top-32 right-16 text-white w-96 h-96">

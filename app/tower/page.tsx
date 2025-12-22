@@ -22,7 +22,7 @@ export default function TowerPage() {
             playsInline
             aria-label="Grand Mesob Tower concept video"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/30 to-black/60" />
         </div>
         <div className="absolute top-40 right-20 text-white w-96 h-96 opacity-5 pointer-events-none">
           <MesobPattern opacity={1.06} />

@@ -21,7 +21,7 @@ export default function BusinessPage() {
             playsInline
             aria-label="Grand Mesob Tower concept video"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/55 to-black/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/30" />
         </div>
         <ParallaxSection speed={0.3} className="absolute inset-0">
           <div className="absolute top-40 left-20 text-white w-full h-96">

@@ -22,7 +22,7 @@ export default function Home() {
             playsInline
             aria-label="Grand Mesob Tower concept video"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/65 to-black/100" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/60" />
         </div>
 
         {/* Background Patterns - Decorative */}
